@@ -1,0 +1,285 @@
+body {
+  margin: 0;
+  padding: 0;
+  padding-top: 132px;
+  font-family: Arial;
+}
+
+header {
+  background-color: black;
+  padding: 5px;
+  text-align: center;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+}
+
+header h1 {
+  color: rgba(6, 209, 131, 0.692);
+  border: 5px solid rgba(255, 255, 255, 0.918);
+  display: inline-block;
+  padding: 6px 12px;
+  border-radius: 36px;
+}
+
+.banner {
+  position: relative;
+}
+
+.banner img {
+  max-width: 100%;
+}
+
+.banner .welcome-banner {
+  position: absolute;
+  right: 0;
+  top: 2%;
+  background-color: rgba(6, 209, 131, 0.692);
+  color: rgba(255, 255, 255, 0.918);
+  padding: 20px;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+}
+
+.welcome-banner h2 {
+  font-size: 31px;
+}
+
+.welcome-banner h2 span {
+  font-size: 1.1em;
+}
+
+.main-nav {
+  background-color: green;
+  padding: 20px;
+  position: sticky;
+  top: 112px;
+  z-index: 5;
+}
+
+.main-nav ul {
+  white-space: nowrap;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.main-nav li {
+  width: 25%;
+  display: inline-block;
+  font-size: 24px;
+}
+
+.main-nav ul li a {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.918);
+}
+
+.main-nav li a.join {
+  color: black;
+}
+
+main {
+  max-width: 100%;
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0 45px;
+  box-sizing: border-box;
+}
+
+main h2 {
+  color: lightgreen;
+  font-size: 48px;
+}
+
+main p {
+  line-height: 2em;
+  color: rgba(141, 127, 127, 0.781);
+}
+
+.main-images {
+  text-align: center;
+  margin: 80px 0;
+  white-space: nowrap;
+}
+
+.main-images li {
+  display: inline-block;
+  width: 40%;
+  margin: 20px 5%;
+}
+
+li img {
+  max-width: 100%;
+}
+
+.join-section {
+  background-color: rgb(154, 230, 154);
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.join-section h2 {
+  font-size: 36px;
+}
+
+.join-section form input {
+  margin: 20px 0;
+  padding: 10px 20px;
+  font-size: 24px;
+  border-radius: 28px;
+  border: 4px solid white;
+}
+
+footer {
+  background-color: black;
+  padding: 10px;
+  color: white;
+  text-align: center;
+}
+
+.main-nav li a {
+  transition: all 1s;
+}
+
+.main-nav li a:hover {
+  text-decoration: underline;
+  background-color: rgb(154, 230, 154);
+  padding: 15px;
+}
+
+.main-images li:hover {
+  position: relative;
+  top: -4px;
+}
+
+form input:focus {
+  border: 4px dotted lightgreen;
+  outline: none;
+}
+
+form input:valid {
+  border: 2px solid green;
+}
+
+article p::first-line {
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+article p::first-letter {
+  color: red;
+}
+
+p::selection {
+  background-color: black;
+  color: white;
+}
+
+@media screen and (max-width: 1110px) {
+  .welcome-banner h2 {
+    font-size: 24px;
+  }
+}
+
+@media screen and (min-width: 1000px) and (max-width: 1100px) {
+  .welcome-banner h2 {
+    font-size: 22px;
+  }
+
+  .main-nav li {
+    font-size: 18px;
+  }
+}
+
+@media screen and (min-width: 901px) and (max-width: 999px) {
+  .welcome-banner h2 {
+    font-size: 19px;
+  }
+
+  .main-nav li {
+    font-size: 18px;
+  }
+}
+
+@media screen and (min-width: 851px) and (max-width: 900px) {
+
+  .welcome-banner h2 {
+    font-size: 18px;
+  }
+
+  .main-nav li {
+    font-size: 18px;
+  }
+}
+
+@media screen and (min-width: 800px) and (max-width: 850px) {
+  .welcome-banner h2 {
+    font-size: 16px;
+  }
+
+  .main-nav li {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 799px) {
+  .banner .welcome-banner {
+    position: relative;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    text-align: center;
+    padding: 10px;
+  }
+
+  .welcome-banner br {
+    display: none;
+  }
+
+  .welcome-banner h2 {
+    font-size: 22px;
+  }
+
+  .welcome-banner h2 span {
+    font-size: 1em;
+  }
+
+  .main-nav li {
+    font-size: 18px;
+  }
+
+  .main-images li {
+    display: block;
+    width: 100%;
+    margin: 20px auto;
+  }
+
+  .main-nav {
+    top: 111px;
+  }
+}
+
+@media screen and (max-width: 680px) {
+  .main-nav li {
+    width: 100%;
+    display: block;
+    font-size: 18px;
+    padding: 5px;
+  }
+
+  .main-nav {
+    padding: 8px;
+    top: 0;
+  }
+
+  header {
+    position: relative;
+    top: 0;
+  }
+
+  body {
+    padding-top: 0;
+  }
+}
